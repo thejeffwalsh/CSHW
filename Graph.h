@@ -33,14 +33,14 @@ public:
 		if (start != nullptr)
 			
 		{
-			if (_vertices[vertex->getId()] == *start->getId())
+			if (_vertices[start->getId()] == *start.getId())
 			{
 				//push on starting vertex
-				dijkstra_queue->push(*start)
+				dijkstra_queue.push(*start);
 					
 				//while queue not empty
-				
-				
+				while ( !dijkstra_queue.empty() )
+				{
 					//Top of heap not known (in distances)?
 						
 						
@@ -48,7 +48,8 @@ public:
 						
 						
 						//push on outgoing edges
-			
+				
+				}
 			}
 		}
 		return distances;
