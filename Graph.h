@@ -33,17 +33,20 @@ public:
 		if (start != nullptr)
 			
 		{
-			if (_vertices[vertex->getId()] == *vertex)
+			if (_vertices[vertex->getId()] == *start->getId())
 			{
 				//push on starting vertex
-				
+				dijkstra_queue->push(*start)
 					
 				//while queue not empty
 				
+				
 					//Top of heap not known (in distances)?
-			
+						
+						
 						//make known
-			
+						
+						
 						//push on outgoing edges
 			
 			}
