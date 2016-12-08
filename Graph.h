@@ -51,7 +51,8 @@ public:
 						unordered_map <Vertex, int> temp = dijkstra_queue.top().getEdges();
 						for (int i = 0; i < temp.size(); i++)
 						{
-							temp
+							Vertex weight = temp[i];
+							
 						}
 					}
 				}
