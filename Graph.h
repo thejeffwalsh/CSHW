@@ -30,17 +30,24 @@ public:
 		start->setPathWeight(0);
 
 		//make sure that the starting vertex is in the graph
-		
-			//push on starting vertex
+		if (start != nullptr)
 			
-			//while queue not empty
+		{
+			if (_vertices[vertex->getId()] == *vertex)
+			{
+				//push on starting vertex
+				
+					
+				//while queue not empty
+				
+					//Top of heap not known (in distances)?
 			
-				//Top of heap not known (in distances)?
+						//make known
 			
-					//make known
+						//push on outgoing edges
 			
-					//push on outgoing edges
-
+			}
+		}
 		return distances;
 	}
 };
