@@ -42,13 +42,14 @@ public:
 				while ( !dijkstra_queue.empty() )
 				{
 					//Top of heap not known (in distances)?
-						
-						
+					if (distances.find(dijkstra.top()) != distances.end())
+					{	
 						//make known
 						
 						
 						//push on outgoing edges
-				
+						
+					}
 				}
 			}
 		}
