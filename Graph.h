@@ -42,13 +42,13 @@ public:
 				while ( !dijkstra_queue.empty() )
 				{
 					//Top of heap not known (in distances)?
-					if (distances.find(dijkstra.top()) != distances.end())
+					if (distances.find(dijkstra.top()) == distances.end())
 					{	
 						//make known
-						
+						distances[dijkstra_queue.top()] = start->getPathWeight();
 						
 						//push on outgoing edges
-						
+						dijkstra_queue.push();
 					}
 				}
 			}
